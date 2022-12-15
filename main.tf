@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "sqream"
+    organization = "sqream.snowflakecomputing.com"
 
     workspaces {
       name = "gh-actions-demo"
