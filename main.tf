@@ -6,8 +6,7 @@ terraform {
     }
   }
 
-  
-  backend "remote" {
+backend "remote" {
     organization = "sqream"
 
     workspaces {
@@ -16,10 +15,8 @@ terraform {
   }
 }
 
-
 provider "snowflake" {
 }
-
 
 resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
